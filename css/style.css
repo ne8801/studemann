@@ -33,6 +33,18 @@ body {
 	overflow:hidden;
 	padding:0;
 }
+.inner_copy, .inner_copy b {
+	border:0;
+	float:right;
+	background:#fff;
+	color:#f00;
+	width:50%;
+	line-height:10px;
+	font-size:10px;
+	margin:-220% 0 0 0;
+	overflow:hidden;
+	padding:0;
+}
 .css3 {
 	border-radius:8px;
 	-moz-border-radius:8px;
@@ -77,6 +89,14 @@ a {
 a:hover {
 	text-decoration:none;
 }
+b {
+	color:#fff;
+	text-decoration:underline;
+	outline:none;
+}
+b:hover {
+	text-decoration:none;
+}
 h1 {
 	padding:36px 0 0 22px;
 }
@@ -106,6 +126,12 @@ header h1 a#logo {
 	margin:0;
 	padding:10px 0 0 0;
 }
+header h1 b#logo {
+	text-decoration:none;
+	font:46px "Times New Roman", Times, serif;
+	margin:0;
+	padding:10px 0 0 0;
+}
 header nav {
 	width:100%;
 	overflow:hidden;
@@ -115,11 +141,10 @@ header nav {
 #menu {
 	float:left;
 	padding-left:2px;
-	background:url(../images/menu_line.jpg) 0 0 no-repeat;
 }
 #menu li {
 	float:left;
-	background:url(../images/menu_line.jpg) right top no-repeat;
+	
 	padding-right:2px;
 }
 #menu li a {
@@ -130,7 +155,18 @@ header nav {
 	text-decoration:none;
 	text-align:center;
 }
+#menu li b {
+	display:block;
+	width:300px;
+	font:20px "Times New Roman", Times, serif;
+	line-height:78px;
+	text-decoration:none;
+	text-align:center;
+}
 #menu li a:hover, #menu #menu_active a {
+	background:url(../images/menu_active.jpg) top repeat-x;
+}
+#menu li b:hover, #menu #menu_active b {
 	background:url(../images/menu_active.jpg) top repeat-x;
 }
 #content {
@@ -161,6 +197,9 @@ header nav {
 	color:#000;
 }
 .box a {
+	color:#9a0822;
+}
+.box b {
 	color:#9a0822;
 }
 .box .line1 {
@@ -211,10 +250,20 @@ header nav {
 	padding-left:20px;
 	background:url(../images/marker_1.gif) 0 0px no-repeat;
 }
+.list1 li b {
+	padding-left:20px;
+	background:url(../images/marker_1.gif) 0 0px no-repeat;
+}
 #ContactForm {
 	line-height:21px;
 }
 #ContactForm a {
+	margin-left:22px;
+	margin-right:7px;
+	float:right;
+	font-weight:bold;
+}
+#ContactForm b {
 	margin-left:22px;
 	margin-right:7px;
 	float:right;
@@ -279,9 +328,23 @@ footer {
 	background-color:transparent;
 	text-decoration:none;
 }
+.footerlink b {
+	color:#c1c8d3;
+	font-weight:normal;
+	margin:0;
+	padding:0;
+	border:none;
+	text-decoration:underline;
+	background-color:transparent;
+}
+.footerlink b:hover {
+	color:#c1c8d3;
+	background-color:transparent;
+	text-decoration:none;
+}
 .footerlink .lf {
 	float:left;
-	margin-left:55px;
+	
 }
 .footerlink .rf {
 	float:right;
@@ -289,4 +352,12 @@ footer {
 }
 a {
 	outline:none;
+}
+b {
+	outline:none;
+}
+.right-side-image {
+	float:right;
+    width: auto; /* adjust as needed */
+    height: auto; /* maintain aspect ratio */
 }
